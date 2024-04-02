@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Clientes</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Ícones Bootstrap. Para consultar os ícones: https://icons.getbootstrap.com -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="images/cliente.png" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid m-3">
+            <a class="navbar-brand text-light" href="index.html">FATEC ITU</a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">
+                            <i class="bi bi-house"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="clientes.html">
+                            <i class="bi bi-person"></i> Clientes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="bg-success p-3">
+                <h1 class="text-light">
+                    <img src="images/cliente.png" class="img-fluid" width="100"> Cadastro de clientes
+                </h1>
+            </div>
+            <hr>
+            <form>
+                <div class="m-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="999.999.999-99" required autofocus
+                        required maxLength="14" title="Informe o CPF com pontos e traço">
+                </div>
+                <div class="m-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" required title="Nome completo">
+                </div>
+                <div class="m-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" required placeholder="13309320" pattern="[0-9]{8}"
+                        title="Informe o CEP no formato 99999999">
+                </div>
+                <div class="m-3">
+                    <label for="logradouro" class="form-label">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" placeholder="Ex. Av do Estado">
+                </div>
+                <div class="m-3">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Ex. Vila Nova">
+                </div>
+                <div class="m-3">
+                    <label for="municipio" class="form-label">Municipio</label>
+                    <input type="text" class="form-control" id="municipio" placeholder="Ex. Itu">
+                </div>
+                <div class="m-3">
+                    <label for="estado" class="form-label">Estado</label>
+                    <select class="form-control" id="estado">
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </select>
+                </div>
+                <div class="m-3">
+                    <label for="observacao" class="form-label">Observação</label>
+                    <textarea class="form-control" rows="3" id="observacao"></textarea>
+                </div>
+                <div class="m-3">
+                    <input type="submit" class="btn btn-primary" id="salvar" value="Salvar">
+                    <input type="reset" class="btn btn-danger" id="limpar" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer class="footer mt-auto p-3 bg-danger">
+        <div class="container text-center">
+            <span class="text-light">FATEC ITU &copy; <span id="ano"></span>- Todos os direitos reservados
+            </span>
+        </div>
+    </footer>
+    <script src="js/clientes.js"></script>
+</body>
+
+</html>

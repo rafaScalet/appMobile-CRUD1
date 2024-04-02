@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+ 
+
+<head>
+
+ 
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Área Reservada</title>
+
+ 
+
+    <!--fivicon-->
+
+    <link rel = "icon" href="images/cadeado.png" type="image/png"/>
+
+ 
+
+    <!--Chamar o CSS-->
+
+    <link rel = "stylesheet" href="css/estilo.css"/>
+
+ 
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+ 
+
+    <h1> Área Reservada</h1>
+
+ 
+
+    <img src="images/cadeado.png" title="Logo da Empresa" alt="Cadeado de Segurança" width="100" />
+
+ 
+
+    <form method = "post">
+
+ 
+
+        <fieldset>
+
+ 
+
+            <legend>Dados para o Login</legend>
+
+ 
+
+            <label for = "email">E-mail</label>
+
+ 
+
+            <input type = "text" id = "email" name ="email" required outofocus
+
+ 
+
+            placeholder="nome@gmail.com" title="Informe seu e-mail"/>
+
+ 
+
+            <label for = "senha">Senha</label>
+
+            <input type = "password" id = "senha" name ="senha" required outofocus
+
+ 
+
+            placeholder="senha" title="Senha docadastro" maxlength="5"/>
+
+ 
+
+         </fieldset>
+
+ 
+
+         <input type = "submit" value = "Login" id="login" onclick="validaLogin(event)" class="botao"/>
+
+         <input type = "reset" value = "Limpar" id="limpar" class="botao"/>
+
+ 
+
+    </form>
+
+ 
+
+    <!--Carregando o Java Script-->
+
+ 
+
+    <script src="js/login.js"></script>
+
+ 
+
+</body>
+
+ 
+
+ 
+
+ 
+
+</html>
